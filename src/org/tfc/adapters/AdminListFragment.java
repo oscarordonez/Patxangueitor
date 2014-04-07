@@ -2,11 +2,9 @@ package org.tfc.adapters;
 
 import android.content.Intent;
 import android.widget.*;
-import com.appcelerator.cloud.sdk.ACSClient;
-import com.appcelerator.cloud.sdk.CCMeta;
-import com.appcelerator.cloud.sdk.CCRequestMethod;
-import com.appcelerator.cloud.sdk.CCResponse;
+import com.appcelerator.cloud.sdk.*;
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.tfc.patxangueitor.R;
 import android.os.Bundle;
@@ -14,8 +12,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import org.tfc.patxangueitor.act_newlist;
 import org.tfc.patxangueitor.adminlistuser;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,6 +24,8 @@ import java.util.Map;
 public class AdminListFragment extends Fragment {
     private ListView lv;
     private TextView tv;
+
+    private String user_id;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,26 +38,56 @@ public class AdminListFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState)
     {
         super.onActivityCreated(savedInstanceState);
-        /*
+
         // Test ACS
-        ACSClient sdk = new ACSClient("<YOUR APP APP KEY>"); // app key
+        ACSClient sdk = new ACSClient("iGXpZFRj2XCl9Aixrig80d0rrftOzRef",getActivity().getApplicationContext()); // app key
         //ACSClient sdk = new ACSClient("<OAuth Key>", "<OAuth Secret>"); // OAuth key & secret
 
+        JSONArray llista = new JSONArray();
+
+        Bundle bundle = getActivity().getIntent().getExtras();
+        user_id = bundle.getString("User");
+
         Map<String, Object> data = new HashMap<String, Object>();
-        data.put("where", "{'user': ' 5327444115d8270b5b03200a'}");
-        CCResponse response = sdk.sendRequest("objects/Llista1/query.json", CCRequestMethod.GET, data);
+        //data.put("where", "{\"user_id\" : \"5327444115d8270b5b03200a\"}");
+        data.put("where", "{\"user_id\" : \"" + user_id + "\"}");
+        data.put("order", "nom");
+
+        CCResponse response = null;
+        try {
+            response = sdk.sendRequest("objects/llista/query.json", CCRequestMethod.GET, data);
+        } catch (ACSClientError acsClientError) {
+            acsClientError.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (IOException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
 
         JSONObject responseJSON = response.getResponseData();
         CCMeta meta = response.getMeta();
         if("ok".equals(meta.getStatus())
                 && meta.getCode() == 200
                 && "queryCustomObjects".equals(meta.getMethod())) {
-            JSONArray lists = responseJSON.getJSONArray("Llista1");
+            try {
+                llista = responseJSON.getJSONArray("llista");
+            } catch (JSONException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            }
 
         }
+        ArrayList<String> values = new ArrayList<String>();
+        int i;
+        for (i = 0; i < llista.length(); i++) {
+            try {
+                JSONObject aux = llista.getJSONObject(i);
+                values.add(i, aux.getString("nom"));
+            } catch (JSONException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            }
+        }
+
         // Test ACS
-        */
-        String[] values = new String[] { "Llista 1", "Llista 2", "Llista 3" };
+
+        //String[] values = new String[] { "Llista 1", "Llista 2", "Llista 3" };
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1, values);
 
         lv = (ListView)getView().findViewById(R.id.lvAdmin);
@@ -62,11 +95,22 @@ public class AdminListFragment extends Fragment {
 
         tv = (TextView)getView().findViewById(R.id.tvNewAdminList);
 
+
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
                 Intent myIntent = new Intent(getActivity().getApplicationContext(), adminlistuser.class);
                 startActivity(myIntent);
+            }
+        });
+
+        tv.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent3 = new Intent(getActivity().getApplicationContext(), act_newlist.class);
+                //Bundle b = new Bundle();
+                //b.putString("Session", session);
+                //intent3.putExtras(b);
+                startActivity(intent3);
             }
         });
 

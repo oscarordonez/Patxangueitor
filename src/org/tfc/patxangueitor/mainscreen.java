@@ -14,6 +14,7 @@ public class mainscreen extends FragmentActivity implements ActionBar.TabListene
     private ViewPager viewPager;
     private TabsPagerAdapter mAdapter;
     private ActionBar actionBar;
+    private String user_id;
     // Tab titles
     private String[] tabs = { "Admin. Llistes", "Subscripcions Llistes" };
 
@@ -22,7 +23,11 @@ public class mainscreen extends FragmentActivity implements ActionBar.TabListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainscreen);
 
-        // Initilization
+        //Recuperamos la información pasada en el intent
+        Bundle bundle = this.getIntent().getExtras();
+        user_id = bundle.getString("User");
+
+       // Initilization
         viewPager = (ViewPager) findViewById(R.id.pager);
         actionBar = getActionBar();
         mAdapter = new TabsPagerAdapter(getSupportFragmentManager());

@@ -3,7 +3,7 @@
   <component name="AndroidDesignerProfile">
     <option name="fullProfile">
       <profile>
-        <option name="device" value="2.7in QVGA" />
+        <option name="device" value="3.7 FWVGA slider" />
         <option name="deviceConfiguration" value="Portrait" />
         <option name="targetHashString" value="android-19" />
         <option name="theme" value="AppTheme" />
@@ -24,76 +24,53 @@
     </option>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="patxangueitor" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="WARN" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50949b2d-c72e-4ab6-94bb-a0de355141a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/activity_adminlistview.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/activity_mainscreen.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/activity_subslistuser.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/activity_test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/adminlist.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/tfc/patxangueitor/adminlistevent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/tfc/patxangueitor/adminlistuser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/tfc/patxangueitor/adminlistview.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/datalist.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values-w820dp/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/eventdatalist.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/tfc/patxangueitor/eventlist.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/ids.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values-w820dp/ids.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/tfc/patxangueitor/mainscreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/menu_mainscreen.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/tfc/patxangueitor/signin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/signin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/signin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/tfc/patxangueitor/signup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/signup.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values-w820dp/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/subslist.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/subslist_child.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/subslist_group.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/tfc/patxangueitor/subslistuser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/tfc/patxangueitor/testscreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/tfc/patxangueitor/act_newlist.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/newlist.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/tfc/adapters/AdminListFragment.java" afterPath="$PROJECT_DIR$/src/org/tfc/adapters/AdminListFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/adminlist.xml" afterPath="$PROJECT_DIR$/res/layout/adminlist.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/tfc/patxangueitor/mainscreen.java" afterPath="$PROJECT_DIR$/src/org/tfc/patxangueitor/mainscreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/tfc/patxangueitor/signin.java" afterPath="$PROJECT_DIR$/src/org/tfc/patxangueitor/signin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/signup.xml" afterPath="$PROJECT_DIR$/res/layout/signup.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-w820dp/strings.xml" afterPath="$PROJECT_DIR$/res/values-w820dp/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TFC Android.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/MyActivity.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395086204221" ignored="false" />
     <file path="/adminlistevent.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395086742208" ignored="false" />
     <file path="/TabsPagerAdapter3.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395086773220" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395086841442" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395779284853" ignored="false" />
     <file path="/DataFragment.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395086876244" ignored="false" />
     <file path="/ExpandableListAdapter.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395087349634" ignored="false" />
     <file path="/EventListFragment.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395087328949" ignored="false" />
-    <file path="/AdminListFragment.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395272483385" ignored="false" />
+    <file path="/AdminListFragment.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1396568159283" ignored="false" />
     <file path="/Group.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395086979559" ignored="false" />
     <file path="/SubsListFragment.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395087371749" ignored="false" />
     <file path="/TabsPagerAdapter2.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395086998334" ignored="false" />
     <file path="/UserListFragment.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395087412141" ignored="false" />
     <file path="/adminlistuser.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395087033024" ignored="false" />
     <file path="/eventlist.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395087067758" ignored="false" />
-    <file path="/signin.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395087116528" ignored="false" />
+    <file path="/signin.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1396569950928" ignored="false" />
     <file path="/signup.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395087133457" ignored="false" />
     <file path="/subslistuser.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395087150207" ignored="false" />
     <file path="/testscreen.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395087180071" ignored="false" />
-    <file path="/fragment.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395095782221" ignored="false" />
+    <file path="/fragment.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1396179062274" ignored="false" />
     <file path="/TabsPagerAdapter.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395087388106" ignored="false" />
-    <file path="/mainscreen.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395087573397" ignored="false" />
+    <file path="/mainscreen.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1396567997576" ignored="false" />
     <file path="/adminlistview.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395088037782" ignored="false" />
-    <file path="/Dummy.txt" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395486621814" ignored="false" />
+    <file path="/Dummy.txt" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1396895153815" ignored="false" />
     <file path="/a.xml" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395090684938" ignored="false" />
     <file path="/a.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395090378695" ignored="false" />
+    <file path="/strings.xml" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395963716434" ignored="false" />
+    <file path="/newlist.xml" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1395777952361" ignored="false" />
+    <file path="/act_newlist.java" changelist="50949b2d-c72e-4ab6-94bb-a0de355141a1" time="1396178921380" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,6 +121,53 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/act_newlist.java" line="42" class="org.tfc.patxangueitor.act_newlist$2" package="org.tfc.patxangueitor">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/signin.java" line="85" class="org.tfc.patxangueitor.signin" package="org.tfc.patxangueitor">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$USER_HOME$/Desktop/TFC UdL/acs-android-sdk-master/acs/src/com/appcelerator/cloud/sdk/CCResponse.java" line="17" class="com.appcelerator.cloud.sdk.CCResponse" package="com.appcelerator.cloud.sdk">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -157,16 +181,19 @@
       <file leaf-file-name="signin.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/signin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="60" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.0">
+            <state line="85" column="0" selection-start="2785" selection-end="2785" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
+      <file leaf-file-name="newlist.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/newlist.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state line="46" column="20" selection-start="1655" selection-end="1655" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -175,16 +202,7 @@
       <file leaf-file-name="mainscreen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/mainscreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TabsPagerAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/tfc/adapters/TabsPagerAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+            <state line="25" column="10" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -193,37 +211,27 @@
       <file leaf-file-name="AdminListFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/tfc/adapters/AdminListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="10" selection-start="1871" selection-end="1871" vertical-scroll-proportion="0.4815864">
+            <state line="52" column="68" selection-start="1626" selection-end="1683" vertical-scroll-proportion="0.029668411">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2006#2014#0" expanded="true" />
+                <element signature="e#1521#1537#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminlistevent.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/adminlistevent.java">
+      <file leaf-file-name="act_newlist.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/act_newlist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
+            <state line="42" column="0" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminlistview.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/adminlistview.java">
+      <file leaf-file-name="CCResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/TFC UdL/acs-android-sdk-master/acs/src/com/appcelerator/cloud/sdk/CCResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eventlist.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/eventlist.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
+            <state line="0" column="34" selection-start="8" selection-end="34" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -247,24 +255,27 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/org/tfc/adapters/TabsPagerAdapter2.java" />
-        <option value="$PROJECT_DIR$/src/org/tfc/patxangueitor/adminlistuser.java" />
-        <option value="$PROJECT_DIR$/src/org/tfc/patxangueitor/eventlist.java" />
-        <option value="$PROJECT_DIR$/src/org/tfc/patxangueitor/signin.java" />
-        <option value="$PROJECT_DIR$/src/org/tfc/patxangueitor/signup.java" />
-        <option value="$PROJECT_DIR$/src/org/tfc/patxangueitor/subslistuser.java" />
-        <option value="$PROJECT_DIR$/src/org/tfc/patxangueitor/testscreen.java" />
         <option value="$PROJECT_DIR$/src/org/tfc/adapters/EventListFragment.java" />
         <option value="$PROJECT_DIR$/src/org/tfc/adapters/ExpandableListAdapter.java" />
         <option value="$PROJECT_DIR$/src/org/tfc/adapters/SubsListFragment.java" />
         <option value="$PROJECT_DIR$/src/org/tfc/adapters/TabsPagerAdapter.java" />
         <option value="$PROJECT_DIR$/src/org/tfc/adapters/UserListFragment.java" />
-        <option value="$PROJECT_DIR$/src/org/tfc/patxangueitor/mainscreen.java" />
         <option value="$PROJECT_DIR$/src/org/tfc/patxangueitor/adminlistview.java" />
+        <option value="$PROJECT_DIR$/res/values-w820dp/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/signup.xml" />
+        <option value="$PROJECT_DIR$/res/layout/adminlist.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/layout/newlist.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/org/tfc/patxangueitor/act_newlist.java" />
+        <option value="$PROJECT_DIR$/src/org/tfc/patxangueitor/mainscreen.java" />
+        <option value="$PROJECT_DIR$/src/org/tfc/patxangueitor/signin.java" />
         <option value="$PROJECT_DIR$/src/org/tfc/adapters/AdminListFragment.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -298,16 +309,14 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="TFC Android" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -339,6 +348,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="patxangueitor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TFC Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tfc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="functions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,11 +405,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patxangueitor" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -392,32 +419,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TFC Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Android" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="copyright" />
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -429,7 +440,7 @@
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../acs-android-sdk-master/acs/lib/signpost-core-1.2.1.1.jar!/" />
-    <property name="AndroidLayoutSelectedEditor" value="text-editor" />
+    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -639,37 +650,61 @@
       <created>1395486653007</created>
       <updated>1395486653007</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Esquelet inicial">
+      <created>1395487032864</created>
+      <updated>1395487032864</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32998326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39865997" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58961475" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58961475" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7755444" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32663316" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67001677" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19848485" sideWeight="0.41038525" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.41038525" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18939394" sideWeight="0.41038525" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36515912" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -731,133 +766,120 @@
     <MESSAGE value="Esquelet inicial" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/eventdatalist.xml">
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/app/Instrumentation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+        <state line="1081" column="0" selection-start="41544" selection-end="41544" vertical-scroll-proportion="0.30136988" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+        <state line="5222" column="0" selection-start="220883" selection-end="220883" vertical-scroll-proportion="0.30136988" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/signin.xml">
+    <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/signup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/signup.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/subslist.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/subslist_child.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/subslist_group.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="20" selection-start="427" selection-end="427" vertical-scroll-proportion="0.18681319" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/adminlistuser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="336" selection-end="336" vertical-scroll-proportion="0.35726795">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="11" column="13" selection-start="230" selection-end="230" vertical-scroll-proportion="0.2084063">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/adminlistevent.java">
+    <entry file="file://$USER_HOME$/Desktop/TFC UdL/acs-android-sdk-master/examples/Demo/src/com/appcelerator/cloud/demo/SignUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
+        <state line="40" column="12" selection-start="1028" selection-end="1163" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/tfc/functions/CreateNewList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="192" selection-end="192" vertical-scroll-proportion="0.26795095">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/adminlistview.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
+        <state line="6" column="13" selection-start="133" selection-end="133" vertical-scroll-proportion="0.11908932">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/eventlist.java">
+    <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/adminlistuser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
+        <state line="12" column="13" selection-start="336" selection-end="336" vertical-scroll-proportion="0.14886165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17549" column="0" selection-start="683317" selection-end="683317" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/os/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="0" selection-start="4179" selection-end="4179" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="160" column="0" selection-start="5678" selection-end="5678" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/mainscreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="10" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/act_newlist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/TFC UdL/acs-android-sdk-master/acs/src/com/appcelerator/cloud/sdk/CCResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="34" selection-start="8" selection-end="34" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/newlist.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="46" column="20" selection-start="1655" selection-end="1655" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/signin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="60" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/tfc/patxangueitor/mainscreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/tfc/adapters/TabsPagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+        <state line="85" column="0" selection-start="2785" selection-end="2785" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/tfc/adapters/AdminListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="10" selection-start="1871" selection-end="1871" vertical-scroll-proportion="0.4815864">
+        <state line="52" column="68" selection-start="1626" selection-end="1683" vertical-scroll-proportion="0.029668411">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2006#2014#0" expanded="true" />
+            <element signature="e#1521#1537#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -55,6 +55,9 @@
                 android:name="org.tfc.patxangueitor.adminlistevent"
                 android:label="Admin. Gestio Events" >
         </activity>
+        <activity
+                android:name=".act_newlist"
+                android:label="Crear nova llista"/>
 
     </application>
 

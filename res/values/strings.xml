@@ -23,5 +23,8 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_subs_list_user">Subscripció llista</string>
+    <string name="newlist_name">Nom llista</string>
+    <string name="newlist_date">Data - Hora</string>
+    <string name="APPKEY">iGXpZFRj2XCl9Aixrig80d0rrftOzRef</string>
 
 </resources>
