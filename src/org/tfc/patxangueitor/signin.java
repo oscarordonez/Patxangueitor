@@ -2,6 +2,7 @@ package org.tfc.patxangueitor;
 
 
 import android.app.ProgressDialog;
+import android.os.AsyncTask;
 import com.appcelerator.cloud.sdk.*;
 
 import android.app.Activity;
@@ -23,45 +24,59 @@ import java.util.Map;
 
 
 public class signin extends Activity {
-     private String user_id;
+    private String user_id;
+    protected boolean booResult;
+    protected String txtLogin;
+    protected String txtPass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signin);
 
+
         View connectbtn = findViewById(R.id.btnOk);
-        /*connectbtn.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
-                Intent intent = new Intent(signin.this,mainscreen.class);
-                startActivity(intent);
-            }
-        });*/
 
         connectbtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                ProgressDialog dialog = new ProgressDialog(signin.this);
-                dialog.setMessage("Connectant...");
-                dialog.show();
 
-                if (performsignin()){
-                    Intent intent = new Intent(signin.this,mainscreen.class);
-                    Bundle b = new Bundle();
-                    b.putString("Status","Connected");
-                    b.putString("User", user_id);
-                    intent.putExtras(b);
-                    startActivity(intent);
-                }
-                else
+                //booResult = false;
+                txtLogin = ((EditText) findViewById(R.id.txt_user)).getText().toString();
+                txtPass = ((EditText) findViewById(R.id.txt_pass)).getText().toString();
+                final ProgressDialog dialog = ProgressDialog.show(signin.this, "","Connectant...", true);
+
+                new AsyncTask<Void, Void, Void>()
                 {
-                    ((EditText) findViewById(R.id.txt_user)).setText("");
-                    ((EditText) findViewById(R.id.txt_pass)).setText("");
-                    Toast toast1 =
-                            Toast.makeText(getApplicationContext(),
-                                    "Usuario / contraseña incorrectos", Toast.LENGTH_LONG);
-                    toast1.show();
-                }
-                dialog.dismiss();
+                    @Override
+                    protected Void doInBackground(Void... params)
+                    {
+                        performsignin(txtPass,txtLogin);
+                        return null;
+                    }
+
+                    @Override
+                    protected void onPostExecute(Void result)
+                    {
+                        if (booResult){
+                            Intent intent = new Intent(signin.this,mainscreen.class);
+                            Bundle b = new Bundle();
+                            b.putString("Status","Connected");
+                            b.putString("User", user_id);
+                            intent.putExtras(b);
+                            startActivity(intent);
+                        }
+                        else
+                        {
+                            ((EditText) findViewById(R.id.txt_user)).setText("");
+                            ((EditText) findViewById(R.id.txt_pass)).setText("");
+                            Toast toast1 =
+                                    Toast.makeText(getApplicationContext(),
+                                            "Usuari / Contrasenya incorrectes", Toast.LENGTH_LONG);
+                            toast1.show();
+                        }
+                        dialog.dismiss();
+                    }
+                }.execute();
             }
         });
 
@@ -79,13 +94,13 @@ public class signin extends Activity {
         });
     }
 
-    public boolean performsignin(){
-        boolean boolSuccess = false;
+    public void performsignin(String strLogin, String strPass){
+        //boolean boolSuccess = false;
         ACSClient sdk = new ACSClient("iGXpZFRj2XCl9Aixrig80d0rrftOzRef",getApplicationContext());
 
         Map<String, Object> dataMap = new HashMap<String, Object>();
-        dataMap.put("login", ((EditText) findViewById(R.id.txt_user)).getText().toString());
-        dataMap.put("password", ((EditText) findViewById(R.id.txt_pass)).getText().toString());
+        dataMap.put("login", strLogin);
+        dataMap.put("password", strPass);
 
         try {
             CCResponse response;
@@ -106,17 +121,17 @@ public class signin extends Activity {
                 }
                 //JSONArray responseJSON = meta.toString();
                 //session = responseJSON.
-                boolSuccess = true;
+                booResult = true;
                 }
             else{
-                boolSuccess = false;
+                booResult = false;
             }
         } catch (ACSClientError e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return boolSuccess;
+        //return boolSuccess;
 
     }
 }

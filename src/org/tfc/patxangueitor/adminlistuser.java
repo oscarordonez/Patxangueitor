@@ -23,7 +23,6 @@ public class adminlistuser extends FragmentActivity implements ActionBar.TabList
         setContentView(R.layout.activity_mainscreen);
 
         // Initilization
-
         viewPager = (ViewPager) findViewById(R.id.pager);
         actionBar = getActionBar();
         mAdapter = new TabsPagerAdapter2(getSupportFragmentManager());

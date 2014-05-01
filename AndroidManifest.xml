@@ -58,6 +58,9 @@
         <activity
                 android:name=".act_newlist"
                 android:label="Crear nova llista"/>
+        <activity
+                android:name=".act_newuser"
+                android:label="Afegir nous usuaris"/>
 
     </application>
 

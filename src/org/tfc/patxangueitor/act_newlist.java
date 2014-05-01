@@ -63,6 +63,7 @@ public class act_newlist extends Activity {
                                 Toast.makeText(getApplicationContext(),
                                         "Llista creada correctament", Toast.LENGTH_LONG);
                         toast1.show();
+                        //StartActivity --> recrear activitat
                         finish();
                     }
                 } catch (ACSClientError acsClientError) {
