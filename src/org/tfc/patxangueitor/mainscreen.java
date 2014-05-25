@@ -1,10 +1,15 @@
 package org.tfc.patxangueitor;
 
 import android.app.FragmentTransaction;
+import android.app.ProgressDialog;
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.Toast;
 import com.appcelerator.cloud.sdk.*;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -43,7 +48,6 @@ public class mainscreen extends FragmentActivity implements ActionBar.TabListene
         viewPager.setAdapter(mAdapter);
         actionBar.setHomeButtonEnabled(false);
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-
 
         // Adding Tabs
         for (String tab_name : tabs) {
@@ -94,25 +98,72 @@ public class mainscreen extends FragmentActivity implements ActionBar.TabListene
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_logout:
-                ACSClient sdk = new ACSClient("iGXpZFRj2XCl9Aixrig80d0rrftOzRef",getApplicationContext());
-
-                try {
-                    CCResponse response;
-                    response = sdk.sendRequest("users/logout.json", CCRequestMethod.GET, null);
-                    CCMeta meta = response.getMeta();
-                    if("ok".equals(meta.getStatus())
-                            && meta.getCode() == 200
-                            && "logoutUser".equals(meta.getMethod())){
-                        System.out.println("logout");
-                        finish();
-                    }
-                }catch (ACSClientError e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                LogOutTask tasklogout= new LogOutTask();
+                tasklogout.execute();
                 return true;
         }
         return true;
+    }
+
+    private class LogOutTask extends AsyncTask<Void, Void, Boolean>
+    {
+        private ProgressDialog dia;
+
+        @Override
+        protected void onPreExecute() {
+            dia = new ProgressDialog(mainscreen.this);
+            dia.setMessage("Desconnectant...");
+            dia.show();
+            dia.setCancelable(false);
+        }
+
+        @Override
+        protected Boolean doInBackground(Void... params)
+        {
+            return performlogout();
+        }
+
+        @Override
+        protected void onPostExecute(Boolean booResult)
+        {
+            Toast toast_logout;
+            if (dia.isShowing()) {
+                dia.dismiss();
+            }
+            if (booResult){
+                toast_logout = Toast.makeText(getApplicationContext(),
+                        "La sessió s'ha desconnectat", Toast.LENGTH_LONG);
+                toast_logout.show();
+                finish();
+            }
+            else
+            {
+                toast_logout = Toast.makeText(getApplicationContext(),
+                        "No desconnectat. Si us plau, torni-ho a provar", Toast.LENGTH_LONG);
+                toast_logout.show();
+            }
+        }
+    }
+
+    public boolean performlogout(){
+        ACSClient sdk = new ACSClient("iGXpZFRj2XCl9Aixrig80d0rrftOzRef",getApplicationContext());
+        Boolean result;
+        result = false;
+
+        try {
+            CCResponse response;
+            response = sdk.sendRequest("users/logout.json", CCRequestMethod.GET, null);
+            CCMeta meta = response.getMeta();
+            if("ok".equals(meta.getStatus())
+                    && meta.getCode() == 200
+                    && "logoutUser".equals(meta.getMethod())){
+                result = true;
+            }
+        }catch (ACSClientError e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return result;
     }
  }

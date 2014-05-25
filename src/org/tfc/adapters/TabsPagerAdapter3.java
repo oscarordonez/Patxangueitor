@@ -19,7 +19,7 @@ public class TabsPagerAdapter3 extends FragmentPagerAdapter {
                 return new DataFragment();
             case 1:
                 // SubsList fragment activity
-                return new UserListFragment();
+                return new EventUserListFragment();
         }
         return null;
     }

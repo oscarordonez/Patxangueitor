@@ -15,13 +15,6 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Oscar
- * Date: 25/03/14
- * Time: 21:15
- * To change this template use File | Settings | File Templates.
- */
 public class act_newlist extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +32,6 @@ public class act_newlist extends Activity {
             public void onClick(View view){
                 //fnCreateNewList()
                 ACSClient sdk = new ACSClient("iGXpZFRj2XCl9Aixrig80d0rrftOzRef",getApplicationContext()); // app key
-                //ACSClient sdk = new ACSClient("iGXpZFRj2XCl9Aixrig80d0rrftOzRef"); // app key
                 Map<String, Object> data = new HashMap<String, Object>();
 
                 String listName = ((EditText) findViewById(R.id.txtnewlist_name)).getText().toString();
@@ -50,7 +42,6 @@ public class act_newlist extends Activity {
                 data.put("fields", "{\"nom\" : \"" + listName + "\", \"lloc\": \"" + listPlace + "\"}");
 
                 try {
-                    //CCResponse response = sdk.sendRequest("objects/Llista1/create.json", CCRequestMethod.POST, data);
                     CCResponse response2 = sdk.sendRequest("objects/llista/create.json", CCRequestMethod.POST, data);
 
                     JSONObject responseJSON = response2.getResponseData();
@@ -75,6 +66,5 @@ public class act_newlist extends Activity {
                 }
             }
         });
-
     }
 }

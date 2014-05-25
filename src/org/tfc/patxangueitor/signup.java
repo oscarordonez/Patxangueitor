@@ -25,13 +25,13 @@ public class signup extends Activity {
     protected String email;
     protected String password;
     protected String password_confirm;
-    protected boolean booResult;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup);
 
         View signupButton = findViewById(R.id.button);
+
         signupButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 firstName = ((EditText) findViewById(R.id.first_name)).getText().toString();
@@ -39,42 +39,8 @@ public class signup extends Activity {
                 password = ((EditText) findViewById(R.id.pw)).getText().toString();
                 password_confirm = ((EditText) findViewById(R.id.pw_confirm)).getText().toString();
 
-                final ProgressDialog dialog = ProgressDialog.show(signup.this, "","En progrès...", true);
-
-                new AsyncTask<Void, Void, Void>()
-                {
-                    @Override
-                    protected Void doInBackground(Void... params)
-                    {
-                        performSignup(firstName, email, password, password_confirm);
-                        return null;
-                    }
-
-                    @Override
-                    protected void onPostExecute(Void result)
-                    {
-
-                        if (booResult){
-                            Toast toast1 =
-                                    Toast.makeText(getApplicationContext(),
-                                            "Usuari creat correctament", Toast.LENGTH_LONG);
-                            toast1.show();
-                            finish();
-                        }
-                        else
-                        {
-                            ((EditText) findViewById(R.id.first_name)).setText("");
-                            ((EditText) findViewById(R.id.email_address)).setText("");
-                            ((EditText) findViewById(R.id.pw)).setText("");
-                            ((EditText) findViewById(R.id.pw_confirm)).setText("");
-                            Toast toast2 =
-                                    Toast.makeText(getApplicationContext(),
-                                            "Hi hagut un error en la creació de l'usuari. Torna-ho a provar, si us plau", Toast.LENGTH_LONG);
-                            toast2.show();
-                        }
-                        dialog.dismiss();
-                    }
-                }.execute();
+                SignUpTask tasksignup= new SignUpTask();
+                tasksignup.execute();
             }
         });
         View cancelButton = findViewById(R.id.button2);
@@ -83,9 +49,10 @@ public class signup extends Activity {
                 finish();
             }});
     }
-    public void performSignup(String str_nm, String str_em, String str_pass, String str_pass_conf){
-        /*ACSClient sdk = new ACSClient("2tBiyjAxSafR75JYp6GwA3lqLUoVXJsv","ait42yYpNvsK5p592dMwed5CwCOer8MR");*/
+
+    public Boolean performSignup(String str_nm, String str_em, String str_pass, String str_pass_conf){
         ACSClient sdk = new ACSClient("iGXpZFRj2XCl9Aixrig80d0rrftOzRef");
+        Boolean booStatus = false;
 
         HashMap<String, Object> dataMap = new HashMap<String, Object>();
         dataMap.put("username", str_nm);
@@ -100,15 +67,60 @@ public class signup extends Activity {
             if("ok".equals(meta.getStatus())
                     && meta.getCode() == 200
                     && "createUser".equals(meta.getMethod())){
-                booResult = true;
-            }
-            else{
-                booResult = false;
+                booStatus =  true;
             }
         } catch (ACSClientError e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+        return booStatus;
+    }
+
+    private class SignUpTask extends AsyncTask<Void, Void, Boolean>
+    {
+        private ProgressDialog dia;
+
+        @Override
+        protected void onPreExecute() {
+            dia = new ProgressDialog(signup.this);
+            dia.setMessage("Processant. Esperi si us plau.");
+            dia.show();
+            dia.setCancelable(false);
+        }
+
+        @Override
+        protected Boolean doInBackground(Void... params)
+        {
+            Boolean status;
+            status = performSignup(firstName, email, password, password_confirm);
+            return status;
+        }
+
+        @Override
+        protected void onPostExecute(Boolean booResult)
+        {
+            if (dia.isShowing()) {
+                dia.dismiss();
+            }
+            if (booResult){
+                Toast toast1 =
+                        Toast.makeText(getApplicationContext(),
+                                "Usuari creat correctament", Toast.LENGTH_LONG);
+                toast1.show();
+                finish();
+            }
+            else
+            {
+                ((EditText) findViewById(R.id.first_name)).setText("");
+                ((EditText) findViewById(R.id.email_address)).setText("");
+                ((EditText) findViewById(R.id.pw)).setText("");
+                ((EditText) findViewById(R.id.pw_confirm)).setText("");
+                Toast toast2 =
+                        Toast.makeText(getApplicationContext(),
+                                "Hi hagut un error en la creació de l'usuari. Torna-ho a provar, si us plau", Toast.LENGTH_LONG);
+                toast2.show();
+            }
         }
     }
 }

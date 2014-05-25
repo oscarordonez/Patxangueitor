@@ -12,7 +12,7 @@ import android.widget.ExpandableListView;
 
 public class subslistuser extends Activity {
     // more efficient than HashMap for mapping integers to objects
-    SparseArray<Group> groups = new SparseArray<Group>();
+   /* SparseArray<Group> groups = new SparseArray<Group>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +45,7 @@ public class subslistuser extends Activity {
                 group.children.add("Sub Item" + i);
             }
             groups.append(j, group);
-        }*/
-    }
+        }
+    }   */
 
 }
